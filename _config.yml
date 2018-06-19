@@ -1,0 +1,27 @@
+# Site settings
+title:          Gyujin Cho
+description:    "Just a blog"
+url:            "https://gyujincho.github.io"
+
+# Author
+author:
+  name:         Gyujin Cho
+  url:          https://github.com/gyujincho
+  email:        qjin86@gmail.com
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-paginate
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5

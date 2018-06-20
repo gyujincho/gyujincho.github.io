@@ -203,7 +203,7 @@ _[https://bogdan-lyashenko.github.io/js-code-to-svg-flowchart/docs/live-editor/i
 
 먼저 AST 코드를 파싱한 다음 AST를 탐색하여 **FlowTree**라는 또 다른 트리를 생성합니다. 함수, 루프, 조건 등의 주요 블록을 조립하고, 작고 중요하지 않은 토큰들은 많이 생략합니다. 그 다음에는 FlowTree를 탐색하면서 **ShapesTree**를 생성합니다. ShapesTree의 각 노드는 시각적 유형, 위치, 연결 등에 관한 정보를 포함합니다. 마지막 단계에서는 모든 각각의 Shape에 대해 SVG 표현을 생성하고 모두 하나의 SVG 파일로 합칩니다.
 
-[https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart) 에서  확인해 보세요.
+[Github Repo](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart) 에서  확인해 보세요.
 
 -----------
 <br>

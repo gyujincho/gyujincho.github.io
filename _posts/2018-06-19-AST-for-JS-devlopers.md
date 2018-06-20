@@ -79,10 +79,12 @@ _[https://github.com/ftomassetti/LangSandbox](https://github.com/ftomassetti/Lan
 
 **LangSandbox**라는 다른 좋은 프로젝트도 있습니다. 이 레포는 프로그래밍 언어를 작성하는 방법을 설명합니다. (더 선호한다면) 프로그래밍 언어를 어떻게 작성하는지에 대한 기사나 책의 목록도 있습니다. 여기서는 앞의 The-super-tiny-compiler와 같이 lisp를 C로 컴파일하는 대신에 직접 언어를 작성하고 C/바이트 코드로 컴파일하여 실행할 수 있기 때문에 좀 더 진도를 나갑니다.
 
+### 그냥 라이브러리를 쓰면 안 되나요? 
+
+물론 되죠, 많은 라이브러리가 있습니다. [AST Explorer](https://astexplorer.net/)에서 맘에 드는 것을 하나 고르면 됩니다. AST 파서를 실행할 수 있는 실시간 에디터입니다. JavaScript 외에도 다른 많은 언어를 지원합니다.
+
 ![AST Explorer](/assets/2018-06-19-AST/10.png "AST Explorer")
 _[https://astexplorer.net/](https://astexplorer.net/)_
-
-그냥 라이브러리를 쓰면 안 되냐고요? 물론 되죠, 많은 라이브러리가 있습니다. [AST Explorer](https://astexplorer.net/)에서 맘에 드는 것을 하나 고르면 됩니다. AST 파서를 실행할 수 있는 실시간 에디터입니다. JavaScript 외에도 다른 많은 언어를 지원합니다.
 
 그 중에, 제 생각에 정말 좋은 라이브러리인 **Babylon**을 특히 강조하고 싶습니다.
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Gyujin cho"
+title: "About"
 permalink: /about/
 ---
 

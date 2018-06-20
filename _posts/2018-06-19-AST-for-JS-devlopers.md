@@ -7,9 +7,7 @@ metaimage: "/assets/2018-06-19-AST/03.png"
 metatype: "article"
 ---
 
-이 글은 ITNEXT Medium에 [Bohdan Liashenko](https://www.linkedin.com/in/bohdan-liashenko-bb365854/)가 기고한 **[AST for JavaScript developers](https://itnext.io/ast-for-javascript-developers-3e79aeb08343)**의 번역글입니다. 저자에게는 허락을 구하고 번역하였습니다. 원문이 발표 내용을 포스팅으로 옮긴 것이라 번역할 때에 좀더 포스팅에 맞는 형태로 많이 의역했고, 일부 이미지는 적절히 편집하고 제가 생각하기에 중요한 부분을 강조하기도 했습니다. 혹시 이상한 부분이 있다면 [marina.gyujin.cho@gmail.com](mailto:marina.gyujin.cho@gmail.com) 으로 알려주세요.
-
-아래부터 본문입니다.
+이 글은 ITNEXT Medium에 [Bohdan Liashenko](https://www.linkedin.com/in/bohdan-liashenko-bb365854/)가 기고한 **[AST for JavaScript developers](https://itnext.io/ast-for-javascript-developers-3e79aeb08343)**의 번역입니다. 저자에게는 허락을 구하고 번역하였습니다. 혹시 이상하거나 어색한 부분이 있다면 [marina.gyujin.cho@gmail.com](mailto:marina.gyujin.cho@gmail.com) 으로 알려주세요.
 
 -----------
 <br>

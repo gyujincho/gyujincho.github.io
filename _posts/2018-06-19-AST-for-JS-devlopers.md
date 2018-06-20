@@ -2,6 +2,9 @@
 layout: post
 title: "자바스크립트 개발자를 위한 AST(번역)"
 author: "Gyujin Cho"
+description: "ITNEXT Medium에 Bohdan Liashenko가 기고한 AST for JavaScript developers의 번역글입니다."
+metaimage: "/assets/2018-06-19-AST/03.png"
+metatype: "article"
 ---
 
 이 글은 ITNEXT Medium에 [Bohdan Liashenko](https://www.linkedin.com/in/bohdan-liashenko-bb365854/)가 기고한 **[AST for JavaScript developers](https://itnext.io/ast-for-javascript-developers-3e79aeb08343)**의 번역글입니다. 저자에게는 허락을 구하고 번역하였습니다. 원문이 발표 내용을 포스팅으로 옮긴 것이라 번역할 때에 좀더 포스팅에 맞는 형태로 많이 의역했고, 일부 이미지는 적절히 편집하고 제가 생각하기에 중요한 부분을 강조하기도 했습니다. 혹시 이상한 부분이 있다면 [marina.gyujin.cho@gmail.com](mailto:marina.gyujin.cho@gmail.com) 으로 알려주세요.
@@ -13,7 +16,7 @@ author: "Gyujin Cho"
 > **TL;DR** 이 글은 제가 스톡홀름 ReactJS 밋업에서 최근에 발표한 내용입니다.<br> [여기(Slideshare)](https://www.slideshare.net/BohdanLiashenko/ast-for-javascript-developers)에서 슬라이드를 확인하실 수 있습니다. <br>
 > [LinkedIn에서 원문 공유하기](https://www.linkedin.com/cws/share?url=https%3A%2F%2Fitnext.io%2Fast-for-javascript-developers-3e79aeb08343%3Futm_source%3Dmedium_sharelink%26utm_medium%3Dsocial%26utm_campaign%3Dbuffer)
 
-## 왜  AST(Abstract Syntax Tree)일까요?
+## 왜 AST(Abstract Syntax Tree)일까요?
 
 아무 모던 JS 프로젝트나 하나 골라서 `devDependencies`를 확인하면 지난 몇 년간 JS 툴들이 얼마나 발전했는지 알 수 있을 것입니다. JavaScript 툴링, 코드 압축(minification), CSS 전처리기, eslint, prettier 등등 문자 그대로 도구들이 떼를 지어 있습니다. 이들은 프로덕션 코드에는 포함되지 않는 JavaScript 모듈이지만 개발 과정에서 매우 중요한 역할을 합니다. 이 도구들은 모두 AST 처리를 기반으로 구축되었습니다.
 

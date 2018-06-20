@@ -72,24 +72,24 @@ _위 두 단계를 거쳐 뽑아낸 AST_
 ![The-super-tiny-compiler](/assets/2018-06-19-AST/08.png "The-super-tiny-compiler")
 _[https://github.com/jamiebuilds/the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler)_
 
-**The-super-tiny-compiler** 레포를 살펴보는 것부터 시작할 수  있습니다. 컴파일러의 모든 주요 기능들을 매우 단순화하여 자바 스크립트로 작성한 예시입니다. 실제 코드는 200줄 정도이며, Lisp를 C 언어로 컴파일하는 내용입니다. 모든 코드에 주석과 설명이 달려 있습니다.
+**The-super-tiny-compiler** 레포를 살펴보는 것부터 시작할 수 있습니다. 컴파일러의 모든 주요 기능들을 아주 단순화하여 자바스크립트로 작성한 예시입니다. 실제 코드는 200줄 정도이며, Lisp를 C 언어로 컴파일하는 내용입니다. 모든 코드에 주석과 설명이 달려 있습니다.
 
 ![LangSandbox](/assets/2018-06-19-AST/09.png "LangSandbox")
 _[https://github.com/ftomassetti/LangSandbox](https://github.com/ftomassetti/LangSandbox)_
 
-**LangSandbox**라는 다른 좋은 프로젝트도 있습니다. 이 레포는 프로그래밍 언어를 작성하는 방법을 설명합니다. (문서를 더 선호한다면) 프로그래밍 언어를 어떻게 작성하는지에 대한 기사나 책의 목록도 있습니다. 여기서는 앞의 The-super-tiny-compiler와 같이 lisp를 C로 컴파일하는 대신에 직접 언어를 작성하고 C/바이트 코드로 컴파일하여 실행할 수 있기 때문에 좀 더 진도를 나갑니다.
+**LangSandbox**라는 다른 좋은 프로젝트도 있습니다. 이 레포는 프로그래밍 언어를 작성하는 방법을 설명합니다. (더 선호한다면) 프로그래밍 언어를 어떻게 작성하는지에 대한 기사나 책의 목록도 있습니다. 여기서는 앞의 The-super-tiny-compiler와 같이 lisp를 C로 컴파일하는 대신에 직접 언어를 작성하고 C/바이트 코드로 컴파일하여 실행할 수 있기 때문에 좀 더 진도를 나갑니다.
 
 ![AST Explorer](/assets/2018-06-19-AST/10.png "AST Explorer")
 _[https://astexplorer.net/](https://astexplorer.net/)_
 
-그냥 라이브러리를 쓰면 안 되냐고요? 물론이죠, 많은 라이브러리가 있습니다. [AST Explorer](https://astexplorer.net/)에서 맘에 드는 것을 하나 고르면 됩니다. 여기에는 AST 파서를 실행할 수 있는 실시간 에디터가 있습니다. JavaScript 외에도 다른 많은 언어를 지원합니다.
+그냥 라이브러리를 쓰면 안 되냐고요? 물론 되죠, 많은 라이브러리가 있습니다. [AST Explorer](https://astexplorer.net/)에서 맘에 드는 것을 하나 고르면 됩니다. AST 파서를 실행할 수 있는 실시간 에디터입니다. JavaScript 외에도 다른 많은 언어를 지원합니다.
 
 그 중에, 제 생각에 정말 좋은 라이브러리인 **Babylon**을 특히 강조하고 싶습니다.
 
 ![Babylon](/assets/2018-06-19-AST/11.png "Babylon")
 _Babylon은 Babel에서 쓰이는 JS 파서입니다. JSX, TypeScript, Flow를 지원합니다._
 
-Babylon은 Babel에서 사용되고 있고, 사실 그래서 인기가 많은 걸지도 모릅니다. _(역주: 최근 [`@babel/parser`](https://github.com/babel/babel/tree/master/packages/babel-parser)로 통합되었습니다.)_ Babel 프로젝트가 지원하기 때문에 지난 몇 년 간 꽤 자주 업데이트되어 온 새로운 JS 기능을 항상 최신 상태로 유지할 거라고 기대할 수 있습니다. 그러니까,  ‘asynchronous iteration’(이건 뭐건 간에) 이런 새로운 기능이 추가되어도 이 파서는 `Unexpexted token`을 던지지 않을 거란 말이죠. 또, 꽤 좋은 API를 가지고 있으며 일반적으로 사용하기 쉽습니다.
+Babylon은 Babel에서 사용하고 있고, 사실 그래서 인기가 많을 겁니다. _(역주: 최근 [`@babel/parser`](https://github.com/babel/babel/tree/master/packages/babel-parser)로 통합되었습니다.)_ Babel 프로젝트가 지원하기 때문에 지난 몇 년 간 꽤 자주 업데이트되어 온 새로운 JS 기능을 항상 최신 상태로 지원할 거라고 기대할 수 있습니다. 그러니까, ‘asynchronous iteration’(이건 뭐건 간에) 이런 새로운 기능이 추가되어도 이 파서는 `Unexpexted token`을 던지지 않을 거란 말이죠. 또, 꽤 좋은 API를 가지고 있으며 일반적으로 사용하기 쉽습니다.
 
 좋습니다. 이제 AST를 생성하는 법을 알았으니 실제 사용 사례로 넘어가 볼까요.
 
@@ -104,7 +104,7 @@ Babylon은 Babel에서 사용되고 있고, 사실 그래서 인기가 많은 �
 ![Babel](/assets/2018-06-19-AST/12.png "Babel")
 _보통 트랜스파일러라고 부르는 소스를 소스로 변환하는 JS 컴파일러입니다.<br>[https://github.com/babel/babel](https://github.com/babel/babel)_
 
-많은 이들이 Babel하면 ES6/7/8기능의 지원을 떠올립니다. 그리고 사실, 그게 보통 우리가 Babel을 사용하는 이유입니다. 하지만 ES6/7/8 지원은 단지 플러그인 그룹 중 하나에 불과합니다. Babel은 코드 압축(minification)에도 사용할 수 있고 React와 관련된 문법(예를 들면 JSX 같은)을 트랜스파일하는 데에나 Flow를 위한 플러그인으로도 사용할 수 있습니다.
+많은 이들이 Babel하면 ES6/7/8 기능의 지원을 떠올립니다. 그리고 사실, 그게 보통 우리가 Babel을 사용하는 이유입니다. 하지만 ES6/7/8 지원은 단지 플러그인 그룹 중 하나에 불과합니다. Babel은 코드 압축(minification)에도 사용할 수 있고 React와 관련된 문법(예를 들면 JSX 같은)을 트랜스파일하는 데에나 Flow를 위한 플러그인으로도 사용할 수 있습니다.
 
 **Babel은 JS 컴파일러입니다.** 크게 보면 코드를 파싱, 변환 및 생성하는 3단계로 구성됩니다. 그럼 코드를 어떻게 변환할까요? 맞습니다! AST를 구축하고, 적용된 플러그인에 기반하여 AST를 탐색하며 수정한 후, 수정된 AST에서 새로운 코드를 생성하고 있습니다.
 
@@ -112,7 +112,7 @@ _보통 트랜스파일러라고 부르는 소스를 소스로 변환하는 JS �
 
 ![Babel Example](/assets/2018-06-19-AST/13.png "Babel Example")
 
-앞에서 언급했듯이 Babel은 Babylon을 사용하므로 먼저 코드를 파싱합니다. 그 후 AST를 탐색하고 모든 변수 이름을 변환합니다. 마지막 단계로 코드를 생성합니다. 끝입니다. 보시면 아시겠지만 1단계(구문 분석)과 3단계(코드 생성)은 매번 수행할 작업, 공통 단계입니다. 그래서 이 단계는 Babel이 알아서 처리합니다. 우리가 정말로 관심을 가지고있는 것은 **AST 변형**이기 때문입니다.
+앞에서 언급했듯이 Babel은 Babylon을 사용하므로 먼저 코드를 파싱합니다. 그 후 AST를 탐색하고 모든 변수 이름을 변환합니다. 마지막 단계로 코드를 생성합니다. 끝입니다. 보시면 아시겠지만 1단계(구문 분석)과 3단계(코드 생성)은 매번 수행할 작업, 공통 단계입니다. 그래서 이 단계는 Babel이 알아서 처리합니다. 우리가 정말 관심 있는 것은 **AST 변형**이기 때문입니다.
 
 그래서 Babel 플러그인을 개발할 때는 AST를 변환할 노드 **"방문자(Visitor)"**만 작성하면 됩니다.
 
@@ -154,11 +154,11 @@ _[https://github.com/facebook/jscodeshift](https://github.com/facebook/jscodeshi
 
 ### Prettier
 
-마지막으로 Prettier도 가볍게 짚고 넘어가고 싶은데요, 아마 모두들 매일 사용하고 계실 테니까요.
+Prettier도 가볍게 짚고 넘어가고 싶은데요, 아마 모두들 매일 사용하고 계실 테니까요.
 
 ![Prettier](/assets/2018-06-19-AST/20.png "Prettier")
 
-Prettier는 코드의 형식을 변환합니다. 긴 줄을 끊고, 공백과 괄호 등을 제거합니다. 그러려면 코드를 입력 받아서 수정 된 코드를 출력으로 반환해야 합니다. 이미 익숙하게 들리죠? 맞습니다.
+Prettier는 코드의 형식을 변환합니다. 긴 줄을 끊고, 공백과 괄호 등을 제거합니다. 그러려면 코드를 입력 받아서 수정 된 코드를 출력으로 반환해야 합니다. 어디서 들어본 것 같죠? 맞습니다.
 
 ![Prettier](/assets/2018-06-19-AST/21.png "Prettier")
 _IR(Intermediate Representation)은 AST 노드가 어떤 형식으로 바뀔지 서술합니다.<br>[https://github.com/prettier/prettier](https://github.com/prettier/prettier)_
@@ -174,14 +174,14 @@ _[http://homepages.inf.ed.ac.uk/wadler/papers/prettier/prettier.pdf](http://home
 
 ## js2flowchart
 
-자, 오늘 마지막으로 얘기하고 싶은 것은 [js2flowchart](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart)라는 제 라이브러리입니다. (Github에 4.2k개의 별이 있습니다.)
+마지막으로 소개하고 싶은 것은 [js2flowchart](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart)라는 제 라이브러리입니다. (Github에 4.2k개의 별이 있습니다.)
 
 ![js2flowchart](/assets/2018-06-19-AST/23.png "js2flowchart")
 _이름 그대로입니다. JS Code를 SVG 플로우챠트로 만드는 라이브러리입니다._
 
-이것은 AST 코드 표현 방식을 사용하면 원하는 작업은 뭐든지 수행할 수 있다는 것을 보여 주는 좋은 예입니다. 꼭  AST를 다시 코드 문자열로 바꿀 필요는 없습니다. 그걸로 플로우차트를 그리든 뭐든 맘대로 할 수 있습니다.
+이것은 AST 코드 표현 방식을 사용하면 원하는 작업은 뭐든지 수행할 수 있다는 것을 보여 주는 좋은 예입니다. 꼭 AST를 다시 코드 문자열로 바꿀 필요는 없습니다. 그걸로 플로우차트를 그리든 뭐든 맘대로 할 수 있습니다.
 
-그럼 이 라이브러리는 뭘 하는 걸까요? 플로우 차트로 코드를 설명/문서화하고, 다른 사람들이 쓴 코드를 시각적으로 이해하여 배우고, 유효한 JS 구문으로 되어 있기만 하다면 모든 프로세스의 플로우 차트를 작성할 수 있습니다.
+그럼 이 라이브러리는 뭘 하는 걸까요? 플로우 차트로 코드를 설명/문서화하고, 다른 사람들이 쓴 코드를 시각적으로 이해하여 배우고, 유효한 JS 구문으로 되어 있기만 하다면 모든 프로세스의 플로우 차트를 작성할 수 있습니다. _(역주: 원 저자는 js2flowchart를 이용해 [Under the hood: React](https://github.com/Bogdan-Lyashenko/Under-the-hood-ReactJS) 프로젝트를 만들기도 했습니다. [한글 번역](https://github.com/Bogdan-Lyashenko/Under-the-hood-ReactJS/blob/master/stack/languages/korean/book/Intro.md)도 있으니 한 번 확인해보세요.)_
 
 지금 바로 사용해 볼 수 있는 가장 간단한 방법은 [실시간 편집기](https://bogdan-lyashenko.github.io/js-code-to-svg-flowchart/docs/live-editor/index.html)를 사용하는 것입니다.
 
@@ -206,9 +206,4 @@ _[https://bogdan-lyashenko.github.io/js-code-to-svg-flowchart/docs/live-editor/i
 
 먼저 AST 코드를 파싱한 다음 AST를 탐색하여 **FlowTree**라는 또 다른 트리를 생성합니다. 함수, 루프, 조건 등의 주요 블록을 조립하고, 작고 중요하지 않은 토큰들은 많이 생략합니다. 그 다음에는 FlowTree를 탐색하면서 **ShapesTree**를 생성합니다. ShapesTree의 각 노드는 시각적 유형, 위치, 연결 등에 관한 정보를 포함합니다. 마지막 단계에서는 모든 각각의 Shape에 대해 SVG 표현을 생성하고 모두 하나의 SVG 파일로 합칩니다.
 
-[Github Repo](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart) 에서  확인하실 수 있습니다.
-
------------
-<br><br>
-원 저자는 js2flowchart를 이용해 [Under the hood: React](https://github.com/Bogdan-Lyashenko/Under-the-hood-ReactJS) 프로젝트를 만들기도 했습니다.
-[한글 번역](https://github.com/Bogdan-Lyashenko/Under-the-hood-ReactJS/blob/master/stack/languages/korean/book/Intro.md)도 있으니 한 번 확인해보세요.
+프로젝트는 [Github Repo](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart) 에서 확인하실 수 있습니다.

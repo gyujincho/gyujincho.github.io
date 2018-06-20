@@ -77,7 +77,7 @@ _[https://github.com/jamiebuilds/the-super-tiny-compiler](https://github.com/jam
 ![LangSandbox](/assets/2018-06-19-AST/09.png "LangSandbox")
 _[https://github.com/ftomassetti/LangSandbox](https://github.com/ftomassetti/LangSandbox)_
 
-**LangSandbox**라는 다른 좋은 프로젝트도 있습니다. 이 레포는 프로그래밍 언어를 작성하는 방법을 설명합니다. (문서를 더 선호한다면) 프로그래밍 언어를 어떻게 작성하는지에 대한 기사나 책의 목록도 있습니다. 여기서는 앞의 The-super-tiny-compiler와 같이 lisp를 C로 컴파일하는 대신에 직접 언어를 작성하고 C2바이트 코드로 컴파일하여 실행할 수 있기 때문에 좀 더 진도를 나갑니다.
+**LangSandbox**라는 다른 좋은 프로젝트도 있습니다. 이 레포는 프로그래밍 언어를 작성하는 방법을 설명합니다. (문서를 더 선호한다면) 프로그래밍 언어를 어떻게 작성하는지에 대한 기사나 책의 목록도 있습니다. 여기서는 앞의 The-super-tiny-compiler와 같이 lisp를 C로 컴파일하는 대신에 직접 언어를 작성하고 C/바이트 코드로 컴파일하여 실행할 수 있기 때문에 좀 더 진도를 나갑니다.
 
 ![AST Explorer](/assets/2018-06-19-AST/10.png "AST Explorer")
 _[https://astexplorer.net/](https://astexplorer.net/)_

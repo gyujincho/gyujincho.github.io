@@ -2,6 +2,15 @@
 <html lang="en">
 
   <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121059635-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121059635-1');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -77,7 +86,7 @@
 
 <h2 id="abstract-syntax-tree가-뭘까요">Abstract Syntax Tree가 뭘까요?</h2>
 
-<p>프로그래밍 언어의 문법에 따라 소스 코드 구조를 표시하는 계층적 프로그램 표현(respresentation)입니다. 각 AST 노드는 소스 코드의 항목(item)에 해당합니다.</p>
+<p>프로그래밍 언어의 문법에 따라 소스 코드 구조를 표시하는 계층적 프로그램 표현 (respresentation)입니다. 각 AST 노드는 소스 코드의 항목(item)에 해당합니다.</p>
 
 <p><img src="/assets/2018-06-19-AST/03.png" alt="뭐라고요" title="뭐라고요" />
 <em>뭐라고 하신 거죠</em></p>
@@ -258,10 +267,10 @@
 
 <p>먼저 AST 코드를 파싱한 다음 AST를 탐색하여 <strong>FlowTree</strong>라는 또 다른 트리를 생성합니다. 함수, 루프, 조건 등의 주요 블록을 조립하고, 작고 중요하지 않은 토큰들은 많이 생략합니다. 그 다음에는 FlowTree를 탐색하면서 <strong>ShapesTree</strong>를 생성합니다. ShapesTree의 각 노드는 시각적 유형, 위치, 연결 등에 관한 정보를 포함합니다. 마지막 단계에서는 모든 각각의 Shape에 대해 SVG 표현을 생성하고 모두 하나의 SVG 파일로 합칩니다.</p>
 
-<p><a href="https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart">Github Repo</a> 에서  확인해 보세요.</p>
+<p><a href="https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart">Github Repo</a> 에서  확인하실 수 있습니다.</p>
 
 <hr />
-<p><br />
+<p><br /><br />
 원 저자는 js2flowchart를 이용해 <a href="https://github.com/Bogdan-Lyashenko/Under-the-hood-ReactJS">Under the hood: React</a> 프로젝트를 만들기도 했습니다.
 <a href="https://github.com/Bogdan-Lyashenko/Under-the-hood-ReactJS/blob/master/stack/languages/korean/book/Intro.md">한글 번역</a>도 있으니 한 번 확인해보세요.</p>
 
@@ -279,7 +288,7 @@
 
     <footer>
       <span>
-        &copy; <time datetime="2018-06-20 18:04:38 +0900">2018</time> Gyujin Cho. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+        &copy; <time datetime="2018-06-20 18:14:43 +0900">2018</time> Gyujin Cho. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
       </span>
     </footer>
   </body>

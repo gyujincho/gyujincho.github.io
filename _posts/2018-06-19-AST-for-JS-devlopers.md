@@ -26,7 +26,7 @@ _이 툴들이 다 AST 기반으로 만들어졌습니다._
 
 ## Abstract Syntax Tree가 뭘까요?
 
-프로그래밍 언어의 문법에 따라 소스 코드 구조를 표시하는 계층적 프로그램 표현(respresentation)입니다. 각 AST 노드는 소스 코드의 항목(item)에 해당합니다.
+프로그래밍 언어의 문법에 따라 소스 코드 구조를 표시하는 계층적 프로그램 표현 (respresentation)입니다. 각 AST 노드는 소스 코드의 항목(item)에 해당합니다.
 
 ![뭐라고요](/assets/2018-06-19-AST/03.png "뭐라고요")
 _뭐라고 하신 거죠_
@@ -203,9 +203,9 @@ _[https://bogdan-lyashenko.github.io/js-code-to-svg-flowchart/docs/live-editor/i
 
 먼저 AST 코드를 파싱한 다음 AST를 탐색하여 **FlowTree**라는 또 다른 트리를 생성합니다. 함수, 루프, 조건 등의 주요 블록을 조립하고, 작고 중요하지 않은 토큰들은 많이 생략합니다. 그 다음에는 FlowTree를 탐색하면서 **ShapesTree**를 생성합니다. ShapesTree의 각 노드는 시각적 유형, 위치, 연결 등에 관한 정보를 포함합니다. 마지막 단계에서는 모든 각각의 Shape에 대해 SVG 표현을 생성하고 모두 하나의 SVG 파일로 합칩니다.
 
-[Github Repo](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart) 에서  확인해 보세요.
+[Github Repo](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart) 에서  확인하실 수 있습니다.
 
 -----------
-<br>
+<br><br>
 원 저자는 js2flowchart를 이용해 [Under the hood: React](https://github.com/Bogdan-Lyashenko/Under-the-hood-ReactJS) 프로젝트를 만들기도 했습니다.
 [한글 번역](https://github.com/Bogdan-Lyashenko/Under-the-hood-ReactJS/blob/master/stack/languages/korean/book/Intro.md)도 있으니 한 번 확인해보세요.

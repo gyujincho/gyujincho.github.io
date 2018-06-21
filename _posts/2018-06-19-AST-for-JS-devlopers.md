@@ -2,9 +2,8 @@
 layout: post
 title: "자바스크립트 개발자를 위한 AST(번역)"
 author: "Gyujin Cho"
-description: "ITNEXT Medium에 Bohdan Liashenko가 기고한 AST for JavaScript developers의 번역글입니다."
-metaimage: "/assets/2018-06-19-AST/03.png"
-metatype: "article"
+description: "AST for JavaScript developers(by Bohdan Liashenko)의 번역글입니다."
+image: "/assets/2018-06-19-AST/03.png"
 ---
 
 이 글은 ITNEXT Medium에 [Bohdan Liashenko](https://www.linkedin.com/in/bohdan-liashenko-bb365854/)가 기고한 **[AST for JavaScript developers](https://itnext.io/ast-for-javascript-developers-3e79aeb08343)**의 번역입니다. 저자에게는 허락을 구하고 번역하였습니다. 혹시 이상하거나 어색한 부분이 있다면 [marina.gyujin.cho@gmail.com](mailto:marina.gyujin.cho@gmail.com) 으로 알려주세요.
